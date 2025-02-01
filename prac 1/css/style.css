@@ -1,0 +1,200 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(to top right, #F2F2F2, #C1E1C1, #A67B5B);
+}
+
+
+/* Style rules for form elements */
+fieldset,
+input,
+select,
+textarea {
+    margin-bottom: 0.5%;
+    background-color: white;
+}
+
+fieldset legend {
+    font-weight: bolder;
+    font-size: 150%;
+    border: none;
+}
+
+fieldset {
+    border: 2px solid black;
+}
+
+.btn {
+    padding: 1.5%; 
+    font-size: 1.5em; 
+    font-weight: bold;
+    background-color: #A67B5B;
+    color: white;
+    border-radius: 14px;
+}
+
+/* Style rules for mobile viewport */
+header {
+    top: 0;
+    height: fit-content;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.mobile {
+    display: block;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 0%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+main {
+    clear: left;
+    background-color: white;
+    padding: 1%;
+    font-size: 1.25em;
+    font-family: "Montserrat, Mulish";
+    border-left: black medium solid;
+    border-right: black medium solid;
+    border-radius: 20px;
+}
+
+nav li {
+    display: block;
+    font-size: 1.3em;
+    font-family: "Montserrat, Mulish";
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #A67B5B;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.action {
+    font-size: 2.0em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #A67B5B;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 14px;
+    transition: 1s ease-in-out;
+}
+
+.action:hover {
+    color: #A67B5B;
+    background: white;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 630px) {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 2%;
+    }
+
+    nav ul {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #A67B5B;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+}

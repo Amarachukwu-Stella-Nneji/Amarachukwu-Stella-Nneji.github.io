@@ -1,0 +1,73 @@
+<head>
+    <title>Check Your Pets Health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="checker">
+        <header>
+            <a href="index.html"> <img src="images/petdoc logo.png" alt="Petdoc logo"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="checker.html">Symptom Checker</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <a href="checker.html"> <img src="images/sick pet.png" alt="sick pet"></a>
+        <section>
+            <h2>Enter Your Pet's Symptoms</h2>
+            <div id="form">
+                <form name="myForm" action="submit_form.html" onsubmit="return validateForm()">
+                    <fieldset>
+                        <legend>Pet Information</legend>
+
+                        <label for="email">Your email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+
+                        <label for="pet_type">Type of Pet:</label>
+                        <select name="pet_type" id="pet_type">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="bird">Bird</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+
+                        <label for="petsage">Pet's Age:</label>
+                        <input type="number" id="petsage" name="petsage"><br><br>
+
+                        <label>Symptoms:</label><br>
+                        <input type="checkbox" name="Symptoms" id="Vomiting">
+                        <label for="Vomiting">Vomiting</label><br>
+                        <input type="checkbox" name="Symptoms" id="Lethargy">
+                        <label for="Lethargy">Lethargy</label><br>
+                        <input type="checkbox" name="Symptoms" id="Loss_of_appetite">
+                        <label for="Loss_of_appetite">Loss of Appetite</label><br>
+                        <input type="checkbox" name="Symptoms" id="Loss_of_weight">
+                        <label for="Loss_of_weight">Loss of Weight</label><br>
+                        <input type="checkbox" name="Symptoms" id="Coughing">
+                        <label for="Coughing">Coughing</label><br>
+                        <input type="checkbox" name="Symptoms" id="Other">
+                        <label for="Other">Other</label><br><br>
+
+                        <label for="additional_info">Additional Information (optional):</label><br>
+                        <textarea name="additional_info" id="additional_info" rows="4" cols="50"></textarea><br><br>
+
+                    </fieldset>
+
+                    <input type="submit" value="Check Symptoms" class="btn">
+                </form>
+                <script src="script.js"></script>
+            </div>
+    </main>
